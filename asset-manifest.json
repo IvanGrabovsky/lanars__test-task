@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lanars__test-task/static/css/main.f12f68e5.css",
+    "main.js": "/lanars__test-task/static/js/main.0711d138.js",
+    "index.html": "/lanars__test-task/index.html",
+    "main.f12f68e5.css.map": "/lanars__test-task/static/css/main.f12f68e5.css.map",
+    "main.0711d138.js.map": "/lanars__test-task/static/js/main.0711d138.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f12f68e5.css",
+    "static/js/main.0711d138.js"
+  ]
+}
