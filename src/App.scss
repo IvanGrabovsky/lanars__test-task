@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 1em;
+  background: #f0f0f0;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #787878;
+  }
+}
+
+.board {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.cell {
+  margin: 20px;
+  border: 1px solid #0A0A0C;
+  border-radius: 8px;
+  width: 80px;
+  height: 104px;
+}

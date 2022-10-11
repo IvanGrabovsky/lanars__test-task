@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App">
       <h1>Mahjong</h1>
-      <button>New game</button>
-      <div className='playing_field '>
+      <button className='button_start'>New game</button>
+      <div className='board '>
         <div className='cell'></div>
       </div>
     </div>
