@@ -2,11 +2,11 @@
   text-align: center;
 }
 
-button {
+.button_start {
   padding: 6px 12px;
   font-size: 1em;
   background: #f0f0f0;
-  border: 2px solid black;
+  border: 2px solid #0A0A0C;
   border-radius: 4px;
   cursor: pointer;
 
@@ -16,14 +16,30 @@ button {
 }
 
 .board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 15px;
   max-width: 800px;
   margin: 40px auto;
 }
 
 .cell {
-  margin: 20px;
-  border: 1px solid #0A0A0C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #CDCDCD;
   border-radius: 8px;
-  width: 80px;
   height: 104px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 5px #CDCDCD;
+     // border: 0.5px solid #ED5517;
+    //  border: 1px solid #0A0A0C; 
+  }
+
+  & .hidden {
+    opacity: 0;
+    transition-duration: 0.5s;
+  }
 }
