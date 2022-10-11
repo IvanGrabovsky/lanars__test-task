@@ -1,0 +1,22 @@
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #CDCDCD;
+  border-radius: 8px;
+  height: 104px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 5px #CDCDCD;
+  }
+
+  & .hidden {
+    opacity: 0;
+    transition-duration: 0.5s;
+  }
+}
+
+.opened {
+  border: 0.5px solid black;
+}

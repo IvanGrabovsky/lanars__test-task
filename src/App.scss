@@ -22,24 +22,3 @@
   max-width: 800px;
   margin: 40px auto;
 }
-
-.cell {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.5px solid #CDCDCD;
-  border-radius: 8px;
-  height: 104px;
-  cursor: pointer;
-
-  &:hover {
-    box-shadow: 0 0 5px #CDCDCD;
-     // border: 0.5px solid #ED5517;
-    //  border: 1px solid #0A0A0C; 
-  }
-
-  & .hidden {
-    opacity: 0;
-    transition-duration: 0.5s;
-  }
-}

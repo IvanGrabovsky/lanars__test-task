@@ -1,17 +1,22 @@
-import { useState } from 'react';
+import classNames from 'classnames';
 import './Card.scss'
 
-export default function Card({ card, handleSelect, isCardTurned }) {
-  const [isOpen, setOpen] = useState(true);
+export default function Card({ card, handleSelect, disabled, isCardTurned }) {
 
   const handleClick = () => {
-    handleSelect(card);
-    setOpen(!isOpen);
+    if (!disabled) {
+      handleSelect(card);
+    }
   }
 
   return (
     <div
-      className='cell'
+      className={classNames(
+        'cell',
+        {
+          'opened': card.matched
+        },
+      )}
       onClick={handleClick}
     >
       <span
