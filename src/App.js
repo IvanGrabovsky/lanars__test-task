@@ -39,10 +39,14 @@ const App = () => {
     const mixedCards = [...generateRandomCards, ...generateRandomCards]
       .sort(() => Math.random() - 0.5)
       .map(card => ({ ...card, id: Math.random() }))
+    const visibleMixedCards = mixedCards.map(card => {
+      return {...card, matched: true}
+    })
 
     setFirstCard(null);
     setSecondCard(null);
-    setCards(mixedCards);
+    setCards(visibleMixedCards);
+    setTimeout(() => setCards(mixedCards), 5000);
     setOpenedCards(0);
   }
 
